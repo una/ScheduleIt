@@ -1,0 +1,38 @@
+/* line 1, ../sass/availabilities.scss */
+.slider {
+  float: right;
+  background: none !important;
+  width: 25%;
+  margin: 15px 10px 0 0;
+  height: 20px;
+}
+
+/* line 7, ../sass/availabilities.scss */
+fieldset {
+  margin: 0 auto;
+  width: 80%;
+  padding: 20px 0;
+}
+
+/* line 8, ../sass/availabilities.scss */
+input[type="range"] {
+  -webkit-appearance: none;
+  -moz-apperance: none;
+  width: 100%;
+  height: 4px;
+}
+
+/* line 9, ../sass/availabilities.scss */
+.slider input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-apperance: none;
+  width: 40px;
+  height: 40px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  background: url(../img/icons.svg);
+  background-position: -20px -63px;
+}

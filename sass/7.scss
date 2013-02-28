@@ -1,0 +1,31 @@
+
+#top {
+	&.week{
+		font-size: 20px;
+	}
+}
+
+#weekday ul>li>.schedtime{ 
+	width: 100px;
+	height: 30px;
+	margin: 3%;
+	float:right;
+
+
+	p{
+		font-family: "Domine";
+		font-size: 16px;		
+		margin: 0;
+		text-align:right;
+		float:clear;
+		margin-right:20px;
+	}
+
+
+}
+
+.nowork{
+	float:right;
+	margin: 2%  4% 0 0;
+
+}

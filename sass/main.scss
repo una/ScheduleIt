@@ -1,0 +1,298 @@
+@import "variables.scss";
+
+body,html{
+	height:100%;
+	position:relative;
+}
+
+#container{
+	width:100%;
+	height:100%;
+}
+
+#clear{
+	height:$topheight;
+	width:100%;
+}
+
+#top{
+	height: $topheight;
+	background: $navy;
+	width:100%;
+	position:fixed;
+	top:0;
+
+	&.day{
+		p{
+			font-size:20px;
+		}
+	}
+
+	p{
+		font-family: "Domine";
+		color:white;
+		font-size: 16px;
+		text-align: center;
+		margin-top:16px;
+	}
+}
+
+#bottom{
+	height: $menuheight;
+	background: $navy;
+	width:100%;
+	z-index: 10;
+	position: fixed;
+	bottom:0;
+	ul{
+		width:310px;
+		margin:0 auto;
+		li{
+			a{
+			width: 45px;
+			height: 40px;
+			margin: 8px;
+			float:left;
+			background: url(../img/icons.svg);
+			&:hover{
+				background: url(../img/icons.svg) $darkblue;
+			}
+
+			&[href^="index"]{
+				background-position: -17px -13px;
+			}
+			&[href^="home"]{
+				background-position: -17px -13px;
+			}
+			&[href^="31"]{
+				background-position: -74px -13px;
+			}
+			&[href^="7"]{
+				background-position: -135px -13px;
+			}
+			&[href^="avail"]{
+				background-position: -196px -13px;
+			}
+			&[href^="pref"]{
+				background-position: -257px -13px;
+			}
+
+			}
+		}
+	}
+}
+
+//ICONS
+
+.larr{
+	background: url(../img/icons.svg);
+	background-position: -117px -153px;
+	width: 40px;
+	height:40px;
+	display:block;
+	position: absolute;
+}
+
+.rarr{
+	background: url(../img/icons.svg);
+	background-position: -164px -153px;
+	width: 40px;
+	height:40px;
+	display:block;
+	position: absolute;
+}
+
+.wlarr{
+	background: url(../img/icons.svg);
+	background-position: -214px -154px;
+	width: 40px;
+	height:40px;
+	display:block;
+	left: 0;
+	margin: 8px 0 0 10px;
+	position: absolute;
+}
+
+.wrarr{
+	background: url(../img/icons.svg);
+	background-position: -262px -154px;
+	width: 40px;
+	height:40px;
+	margin: -25px 10px 0 0;
+	float:right;
+	right:0;
+	display:block;
+	position: absolute;
+}
+
+.x{
+	background: url(../img/icons.svg);
+	background-position: -162px -63px;
+	width: 40px;
+	height: 40px;
+	display: block;
+}
+
+.half{
+	background: url(../img/icons.svg);
+	background-position: -15px -63px;
+	width: 40px;
+	height: 40px;
+	display: block;
+	position: absolute;
+}
+
+.check{
+	background: url(../img/icons.svg);
+	background-position: -210px -63px;
+	width: 40px;
+	height: 40px;
+	display: block;
+}
+
+.solidx{
+	background: url(../img/icons.svg);
+	background-position: -63px -63px;
+	width: 40px;
+	height: 40px;
+	display: block;
+}
+
+.solidcheck{
+	background: url(../img/icons.svg);
+	background-position: -111px -63px;
+	width: 40px;
+	height: 40px;
+	display: block;
+}
+
+.edit{
+	background: url(../img/icons.svg);
+	background-position: -258px -63px;
+	width: 40px;
+	height: 40px;
+	display: block;
+}
+
+.pinkx{
+	background: url(../img/icons.svg);
+	background-position: -261px -107px;
+	width: 40px;
+	height: 40px;
+	display: block;
+}
+
+.bluecheck{
+	background: url(../img/icons.svg);
+	background-position: -213px -107px;
+	width: 40px;
+	height: 40px;
+	display: block;
+}
+
+.minus{
+	background: url(../img/icons.svg);
+	background-position: -166px -107px;
+	width: 40px;
+	height: 40px;
+	display: block;
+}
+
+.plus{
+	background: url(../img/icons.svg);
+	background-position: -117px -107px;
+	width: 40px;
+	height: 40px;
+	display: block;
+}
+
+.Sun{
+	background-color: $darkblue;
+}
+.Mon{
+	background: $lightblue;
+}
+.Tues{
+	background: $green;
+}
+.Wed{
+	background: $yellow;
+}
+.Thurs{
+	background: $peach;
+}
+.Fri{
+	background: $salmon;
+}
+.Sat{
+	background: $hotpink;
+}
+
+#addavail{
+	margin: 20px auto;
+
+}
+
+#calendar{
+	height:100%;
+}
+
+#weekday{
+	height:100%;
+	width: 100%;
+	position:fixed;
+
+	ul{
+		height:100%;
+
+		li{
+			height: -moz-calc((100% - 108px)/7);
+    		height: -webkit-calc((100% - 108px)/7);
+    		height: calc((100% - 108px)/7);	
+			width:100%;
+		}
+	}
+
+		p{
+			font-family: "Roboto Condensed";
+			font-weight:700;
+			font-size:24px;
+			color: $navy;
+			text-transform: uppercase;
+			margin: 4%;
+			background: none !important;
+			position: absolute;
+			}
+}
+
+#exception{
+	width:80%; 
+	background-color: $lightblue; 
+	margin:10% auto; 
+	display: block; 
+	height: 15%
+}
+
+#schedclick{
+	width:80%; 
+	background-color: $yellow; 
+	margin:10% auto; 
+	display: block; 
+	height: 15%
+}
+
+#somethingelse{
+	width:80%; 
+	background-color: $peach; 
+	margin:10% auto; 
+	display: block; 
+	height: 15%
+}
+
+
+
+
+
+
+
+
